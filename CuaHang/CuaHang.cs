@@ -30,6 +30,12 @@ namespace CuaHangForm
         {
             SqlCommand command = new SqlCommand("DELETE FROM CuaHang  WHERE MaCuaHang = @mach", dt.getConnection);
             command.Parameters.Add("@mach", SqlDbType.VarChar).Value = MACH;
+
+
+
+
+
+
             dt.openConnection();
             if ((command.ExecuteNonQuery() == 1))
             {
